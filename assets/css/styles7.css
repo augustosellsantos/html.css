@@ -8,3 +8,9 @@ body {
     font-size: 18px;
     text-align: justify;
 }
+.grid .col {
+    background-color: #ade318;
+    width: 400px;
+    height: 400px;
+    margin: 17px;
+}
