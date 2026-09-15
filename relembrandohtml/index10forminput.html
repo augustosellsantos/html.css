@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e input</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        label {
+            cursor: pointer;
+            display: block;
+        }
+        .inline {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank">
+        <section>
+            <h1>Formulário</h1>
+            <p>
+                Aprendo a fazer um formulário.
+            </p>
+            <fieldset>
+                <legend>Informações para teste</legend>
+                <p>
+                    <label for="nomes">Nome completo:</label>
+                    <input type="text" id="nomes" name="nomes" placeholder="seu nome aqui" required>
+                </p>
+                <p>
+                    <label for="datanascimento">Data de Nascimento:</label>
+                    <input type="date" id="datanascimento" name="datanascimento" required>
+                </p>
+                <p>
+                    Gênero:<br>
+                    <label class="inline" for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino"> <br>
+                    <label class="inline" for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino"> <br>
+                    <label class="inline" for="outros">Outros</label>
+                    <input type="radio" id="outros" name="genero" value="outros">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ex.: email@gmail.com" required>
+                </p>
+                <p>
+                    <label for="cor">Cor favorita:</label>
+                    <input type="color" id="cor" name="cor" value="#00ff00">
+                </p>
+                <p>
+                    <label for="mes">Mês:</label>
+                    <input type="month" id="mes" name="mes">
+                </p>
+                <p>
+                    <label for="senha">Sua senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="digite sua senha" required>
+                </p>
+                <p>
+                    <label for="confirmarsenha">Confirmar sua senha:</label>
+                    <input type="password" id="confirmarsenha" name="senha" required>
+                </p>
+                <p>
+                    <label for="nivel">Nivel de satisfação:</label>
+                    <input type="range" id="nivel" list="values">
+                    <datalist id="values">
+                        <option value="0" label="0%"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50" label="50%"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100" label="100%"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label for="pesquisar">Pesquisar:</label>
+                    <input type="search" id="pesquisar" name="pesquisar" placeholder="pesquisar">
+                </p>
+                <p>
+                    <label for="number">Número:</label>
+                    <input type="number" id="number" name="number" placeholder="digite um numero">
+                </p>
+                <p>
+                    <label for="tel">Tel:</label>
+                    <input type="tel" id="tel" name="tel">
+                </p>
+                <p>
+                    <label for="select">Selecione uma das opções:</label>
+                    <select name="select" id="select">
+                        <optgroup label="Mais se identifica">
+                            <option value="algo 1" label="Carro"></option>
+                            <option value="algo 2" label="Esportes"></option>
+                            <option value="algo 3" label="Filmes"></option>
+                            <option value="algo 4" label="Séries"></option>
+                            <option value="algo 5" label="PC"></option>
+                            <option value="algo 6" label="Console" disabled></option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="url">Sua Url:</label>
+                    <input type="url" id="url" name="url" placeholder="coloque aqui sua URL">
+                </p>
+                <p>
+                    <label for="datahora">Data e Hora:</label>
+                    <input type="datetime-local" id="datahora" name="datahora" value="2026-07-30T17:00">
+                </p>
+                <p>
+                    <label for="semana">Semana:</label>
+                    <input type="week" id="semana" name="semana">
+                </p>
+                <p>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" value="17:07:17">
+                </p>
+                <p>
+                    <label class="inline"  for="montador">Sou um montador</label>
+                    <input type="checkbox" id="montador" name="montador" value="sim"> <br>
+                    <label class="inline"  for="dev">Sou um desenvolvedor</label>
+                    <input type="checkbox" id="dev" name="dev" value="sim"> <br>
+                    <label class="inline"  for="eng">Sou um engenheiro</label>
+                    <input type="checkbox" id="eng" name="eng" value="sim"> <br>
+                    <label class="inline"  for="designer">Sou um designer</label>
+                    <input type="checkbox" id="designer" name="designer" value="sim"> <br>
+                    <label class="inline"  for="noob">Sou um noob</label>
+                    <input type="checkbox" id="noob" name="noob" value="sim">
+                </p>
+                <p>
+                    <label for="anexar">Anexar uma foto:</label>
+                    <input type="file" id="anexar" name="anexar" accept=".png,.svg,image/*" multiple>
+                </p>
+                <p>
+                    <label for="textarea">Resumo:</label>
+                    <textarea name="textarea" id="textarea"></textarea>
+                </p>
+                <p>
+                    <button type="reset">Zerar</button>
+                    <button type="submit">Enviar</button>
+                </p>
+            </fieldset>
+            <p>
+                Em alguns formulários o atributo placeholder="serve para deixar como uma mar d'água nos formularios de texto, como no exemplo acima"
+            </p> <br>
+            <p>
+                Em alguns formulários o atributo value="Serve para já deixar um texto(valor ou nome) como exemplo, mas é possivel editar"
+            </p> <br>
+            <p>
+                No formulário type="file" o atributo accept="serve para tu escolher o tipo de arquivo que tu vai aceitar colocar no teu site, como no exemplo eu coloquei para aceitar png e svg. E para aceitar todo tipo de imagem devo colocar image/* que significa todo tipo de imagem. Colocando o atributo 'multiple' permite colocar varios arquivos desejados."
+            </p> <br>
+            <p>
+                No formulário type="number" e type="range" o atributo min="5" é o número minimo que pode acrescentar e o atributo max="100" tu só pode colocar até o número 100. O atributo step="5" é o valor que tu deseja que os números vão pulando, de 5 em 5 por exemplo.
+            </p> <br>
+            <p>
+                Se tu quiser já deixar uma opção no formulário já selecionado, tu adciona o atributo 'selected'. Se tu quiser deixar uma opção não selecionável, tu coloca o atributo 'disabled'.
+            </p>
+            <p>
+                A tag 'optgroup' tu pode formar outros grupos no formulário 'select'.
+            </p>
+        </section>
+    </form>
+</body>
+</html>

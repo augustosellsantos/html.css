@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separando HTML e CSS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="pai">
+        <h1 class="filho">Separando HTML e CSS</h1>
+        <h2 class="filho1">Seletores pai e filho</h2>
+        <p class="p">
+            Seletores no CSS - pais e filhos, ex: .nomedaclass > .nomedaoutraclass {
+
+            }
+            Para ser bem especifico no CSS, deve colocar esse seletor (>) como no exemplo a cima.
+        </p>
+        <p atributo="a">    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae sapiente deleniti esse fugit modi eum vel atque! Vitae perspiciatis ducimus magnam minus dicta aliquid eum debitis quia veritatis dolor.
+        </p>
+        <section class="paidireita">
+            <h2 class="irmaoartigo">Seletores irmãos</h2>
+            <p class="teste">
+                Seleciona um elemento diretamente seguido de outro elemento tu deve colocar o seletor (+), como no exemplo a baixo:
+                Ex: .pai h1+p {
+
+                }
+                Para selecionar todos elementos que são irmão do seguinte elemento, colocar o seletor (~), como no exemplo seguinte:
+                Ex: .pai h1~p {
+
+                }
+            </p>
+            <p class="teste">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero, corrupti maiores earum libero incidunt ipsa officia quos qui fuga, unde ducimus, accusamus aperiam vel repellat architecto sunt soluta molestiae!
+            </p>
+        </section>
+    </div>
+</body>
+</html>
