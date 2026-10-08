@@ -28,7 +28,27 @@ h1 {
 }
 .filhona {
     background: #d5e640;
+    position: absolute;
+    overflow-y: auto;
+}
+ul li.sticky {
+    position: sticky;
+    background: #30aedc;
+    top: 0;
 }
 .filhao {
     background: #40e6bf;
+    position: absolute;
+    right: 7px;
+}
+.neto {
+    position: fixed;
+    background: #5d8bcf;
+    text-transform: uppercase;
+    border-radius: 7px;
+    right: 7px;
+    top: 600px;
+}
+a {
+    text-decoration: none;
 }
