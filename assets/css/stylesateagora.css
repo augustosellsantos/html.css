@@ -6,11 +6,10 @@
     scroll-behavior: smooth;
 }
 .menu {
-    display: flex;
+    display: block;
     position: fixed;
     background: #b28747;
     width: 100%;
-    height: 50px;
     padding: 7px;
     font-size: 17px;
     margin-bottom: 7px;
@@ -20,46 +19,50 @@
 .menu ul {
     list-style: none;
 }
-a {
+.menu ul li {
+    float: left;
+}
+.menu ul li a {
+    display: block;
     text-decoration: none;
     color: #205010;
+    padding: 17px;
+    transition: all 222ms ease-in-out;
+}
+.menu ul li a:hover {
+    background: #cedb68;
+    border-radius: 7px;
 }
 .paidetodos {
+    width: 1200px;
     padding: 7px;
+    padding-top: 77.4px;
     margin: 0 auto;
+    float: left;
 }
 h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
 }
-.onepiece {
-    background: #68d7db;
+.paidetodos .onepiece .naruto .dragonball .demonslayer .onepunchman {
+    text-align: justify;
     padding: 7px;
     border-radius: 7px;
     margin: 7px 0;
+}
+.onepiece {
+    background: #68d7db;
 }
 .naruto {
     background: #68db75;
-    padding: 7px;
-    border-radius: 7px;
-    margin: 7px 0;
 }
 .dragonball {
     background: #cedb68;
-    padding: 7px;
-    border-radius: 7px;
-    margin: 7px 0;
 }
 .demonslayer {
     background: #5162dc;
-    padding: 7px;
-    border-radius: 7px;
-    margin: 7px 0;
 }
 .onepunchman {
     background: #ed8e23;
-    padding: 7px;
-    border-radius: 7px;
-    margin: 7px 0;
 }
