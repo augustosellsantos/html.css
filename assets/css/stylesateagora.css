@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
     scroll-behavior: smooth;
 }
 .menu {
     display: block;
     position: fixed;
-    background: #b28747;
+    background: rgb(178, 135, 71, 0.85);
     width: 100%;
     padding: 7px;
     font-size: 17px;
@@ -33,36 +35,103 @@
     background: #cedb68;
     border-radius: 7px;
 }
-.paidetodos {
-    width: 1200px;
-    padding: 7px;
+.grid {
+    max-width: 1200px;
+    padding: 10px;
     padding-top: 77.4px;
     margin: 0 auto;
+}
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid .col {
+    height: 200px;
     float: left;
+    padding: 10px;
+}
+.grid .col-content {
+    background-color: #ade318;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: justify;
+}
+.paidetodos {
+    width: 100%;
+    height: 100%;
+    background: #787674;
+    border-radius: 7px;
 }
 h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
 }
-.paidetodos .onepiece .naruto .dragonball .demonslayer .onepunchman {
+.onepiece {
+    background: #68d7db;
+    max-width: 1200px;
     text-align: justify;
     padding: 7px;
     border-radius: 7px;
-    margin: 7px 0;
-}
-.onepiece {
-    background: #68d7db;
+    padding-top: 77.4px;
+    margin: 0 auto;
 }
 .naruto {
     background: #68db75;
+    max-width: 1200px;
+    text-align: justify;
+    padding: 7px;
+    border-radius: 7px;
+    padding-top: 77.4px;
+    margin: 0 auto;
 }
 .dragonball {
     background: #cedb68;
+    max-width: 1200px;
+    text-align: justify;
+    padding: 7px;
+    border-radius: 7px;
+    padding-top: 77.4px;
+    margin: 0 auto;
 }
 .demonslayer {
     background: #5162dc;
+    max-width: 1200px;
+    text-align: justify;
+    padding: 7px;
+    border-radius: 7px;
+    padding-top: 77.4px;
+    margin: 0 auto;
 }
 .onepunchman {
     background: #ed8e23;
+    max-width: 1200px;
+    text-align: justify;
+    padding: 7px;
+    border-radius: 7px;
+    padding-top: 77.4px;
+    margin: 0 auto;
+}
+@media all and (max-width:550px) {
+   .grid .col {
+    width: 100%;
+   } 
+}
+@media all and (min-width:551px) and (max-width:768px) {
+   .grid .col {
+    width: 50%;
+   } 
+}
+@media all and (min-width:769px) and (max-width:1200px) {
+   .grid .col {
+    width: 33.33%;
+   } 
+}
+@media all and (min-width:1200px) {
+   .grid .col {
+    width: 25%;
+   } 
 }
